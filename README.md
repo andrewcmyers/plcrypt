@@ -1,1 +1,1 @@
-# PL/Cryptography Workshop
+# PL/Crypto Workshop
