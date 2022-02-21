@@ -6,10 +6,6 @@ body, table, p, ul, li, td  {
 body { margin: 0;
        background-color: #ffffff }
 
-@media screen and (min-width: 600px) {
-    div.contents {padding-left: 2em; padding-right: 2em }
-}
-div.contents {text-align: left }
 div.normal_text { max-width: 80ex; margin: 0 auto }
 
 div.home {
@@ -177,6 +173,12 @@ input#download:hover {
     background-color: #88f
 }
 
+p {
+    max-width: 100ex;
+    text-align: left;
+    margin: 0 auto;
+}
+
 
 pre, xmp { font-family: 'Courier Prime', Courier, monospace; margin-left: 1em;
 	   font-size: 90% }
@@ -303,7 +305,7 @@ div#details { border: solid 1px #ccb; background-color: #eee;
 
 button#hide_details { display: inline }
 
-div.content {text-align: left; padding: 5ex}
+div.contents {margin: 0 auto; padding: 1em}
 p.explanation {text-align: left; width: 60ex}
 td.answer {text-align: left}
 td.question {text-align: right}
@@ -338,11 +340,6 @@ input#save_description_button { display: none }
     bottom: 3ex;
     display: none
 }
-
-.pubpriv p {font-size: 80%}
-div.pubpriv {display: inline-block; width: 45%; min-width: 30ex; padding: 0.5ex}
-#pubpriv_choice {background-color: #f8f8f8}
-fieldset {border-width: 1px}
 
 div.centering { text-align: center }
 #mail_failures table { margin: 0 auto }
