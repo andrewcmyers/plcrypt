@@ -115,8 +115,8 @@ h1, h2, h3, span.paragraph {
 #bannermenu {float: right; padding: 1ex; text-align: left}
 #bannericon {float: left}
 
-.banner { background-color: #0D61A5;
-          text-align: left;
+.banner { background-color: #888;
+          text-align: center;
           overflow: hidden;
           /* background-image: url('sample-ballot.png');
              background-position: center left;
