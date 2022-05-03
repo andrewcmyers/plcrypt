@@ -64,25 +64,6 @@ th              { font-family: Verdana, Helvetica, Arial, sans-serif;
     box-shadow: 3px 3px 5px #aaa;
 }
 
-table { background-color: #e8e8f0 }
-table.matrix { background-color: #e0e0f0 }
-table.form   { background-color: transparent; text-align: left }
-table.form td { font-size: 100% }
-table.form td.label { text-align: right }
-table#main { margin: 0 auto }
-table#ballot { margin: 0 auto }
-table#ballot td { vertical-align: top; }
-.emphasized {
-  background-color: #ffffd0; margin: 0px auto;
-  font-size: 80%;
-  max-width: 80ex;
-  padding: 5px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #cca;
-  text-indent: 0px;
-}
-
 span.explain {font-size: 75%; color: #404040 }
 span.explain img {max-height: 40px}
 
@@ -94,11 +75,8 @@ h1, h2, h3, span.paragraph {
     font-family: Optima, 'Trebuchet MS', Verdana, Helvetica, Arial, sans-serif;
     color: #a52;
     background-color: transparent;
-    font-weight: bold
-}
-
-.content h1 {
-    background-color: #0d61a5
+    font-weight: bold;
+    text-align: center;
 }
 
 .banner a:link { color: white }
@@ -196,26 +174,6 @@ td.lose { font-family: 'Courier Prime', Courier, monospace; text-align:center;
 td.count { text-align: center; font-family: 'Courier Prime', Courier, monospace; }
 
 th.choice { text-align: left }
-table#preftable tr { border-style: none none groove none; border-bottom-color: #e8e8f0; border-bottom-width: 2px; border-collapse: collapse }
-table#preftable tr.tied { border-color: #ccc; border-style: none none dashed none; border-bottom-width: 1px; border-collapse: collapse; padding-bottom: 2px }
-table#preftable td { border-style: none; }
-table#preftable td.choice { cursor: move; padding-right: 1em }
-table#preftable tr:hover td.choice,
-    table#preftable tr:hover td.choice + td { background-color: #f0f0ff }
-table#preftable tr.selected:hover td.choice,
-    table#preftable tr.selected:hover td.choice + td  { background-color: #ffffe0 }
-
-table#preftable { border-style: outset;
-		  margin: 0 auto;
-                  border-width: 1px;
-		  border-collapse: collapse;
-		  border-color: #abc }
-td.choice, td.inactive_choice { font-weight: bold }
-table.matrix th { background-color: transparent; color: black }
-table.matrix, table.rankings { border: solid 1px #aac }
-table.rankings tr td { text-indent: -3ex; padding-left: 3ex }
-table.rankings tr td ol { text-indent: 0ex }
-
 div#topmenu {
     position: relative;
     background: #00355f;
@@ -255,15 +213,6 @@ div.bubble, div.trysomepolls {
         margin-left: 1em;
     }
 }
-div.bubble table { padding: 0; margin: 4px; background-color: transparent }
-div.bubble ul { width: 100%; padding: 0ex; margin: 1px 7px 1px 3px; background-color: transparent }
-div.bubble li { text-indent: 0; padding: 0; list-style: none; border-top: solid 1px #aaa; margin: 0; background-color: transparent}
-div.bubble li:first-child { border-top: none }
-
-div.bubble h3 { padding-top: 0; margin-top: 0 }
-
-div.small_list { font-size: 90% }
-
 table.links {
     margin: 5px;
     background-color: transparent
@@ -295,10 +244,6 @@ div.description { border: solid 1px #bbb;
 		  background-color: #f0f0f0; color: #222; padding: 5px;
 		  font-family: Verdana, Helvetica, Arial, sans-serif; }
 
-#jshelp p {text-align: left; font-size: 90% }
-#jshelp ol {text-align: left; font-size: 90% }
-p#jsnohelp {text-align: left; font-size: 90% }
-
 div#details { border: solid 1px #ccb; background-color: #eee;
               color: black; padding: 5px; margin: 5px;
 	      display: none }
@@ -306,47 +251,5 @@ div#details { border: solid 1px #ccb; background-color: #eee;
 button#hide_details { display: inline }
 
 div.contents {margin: 0 auto; padding: 1em}
-p.explanation {text-align: left; width: 60ex}
-td.answer {text-align: left}
-td.question {text-align: right}
-
-dt { font-weight: bold }
-dd { font-size: 90%; margin-left: 3em }
-
-table#completion_meter { border-style: solid; border-width: 1px; border-color: black; width: 250px; padding: 0; margin: 0}
-td#completed_meter {height: 1ex; background-color: #000080; padding: 0; margin: 0; border-style: none}
-td#incomplete_meter {background-color: transparent; padding: 0; margin: 0; border-style: none}
-#civs_uses ul {font-size: 90%; padding: 0 2ex; margin: 0; column-count: 3 }
-table.ballots {font-size: 80%; border: solid 1px #aac}
-table.ballots th {background-color: transparent; color: black; font-size: 70%}
-
-li b, td > b, strong { color: #a52 }
-
-#move_top, #move_up, #make_tie, #move_down, #move_bottom {
-    font-size: 90%;
-    margin-bottom: 0.5ex;
-}
-
-textarea.paste { font-family: 'Courier Prime', Courier, monospace; font-size: 80% }
-
-textarea#description_edit { display: none }
-input#save_description_button { display: none }
-.popup {
-    border: 1px solid black;
-    background-color: #ffffd0;
-    font-size: 80%;
-    position: relative;
-    left: 3em;
-    bottom: 3ex;
-    display: none
-}
-
-div.centering { text-align: center }
-#mail_failures table { margin: 0 auto }
-#mail_failures th {
-    text-align: center;
-    padding: 0.5ex
-}
-#mail_failures td {
-    padding: 0.5ex
-}
+table {margin: 0 auto }
+table td { padding: 0 1em}
