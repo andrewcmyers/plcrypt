@@ -260,5 +260,6 @@ span.talk_title { color: #080}
     background-color: #ffffd0;
     font-size: 80%;
     position: absolute;
+    max-width: 80ex;
     display: none
 }
