@@ -34,6 +34,7 @@ function fetch_content(id, url, cont) {
     var node = document.getElementById(id);
     read_from_url(url,
         function(responseText) {
+            responseText = responseText.replace("\n\n", "</p>\n");
             node.innerHTML = responseText;
             var undefined;
             if (cont != undefined) cont();
