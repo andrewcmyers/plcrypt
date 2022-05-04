@@ -254,12 +254,13 @@ div.contents {margin: 0 auto; padding: 1em}
 table {margin: 0 auto }
 table td { padding: 0 1em}
 
-span.talk_title { color: #080}
+span.talk_title { color: #08c}
 .popup {
     border: 1px solid black;
     background-color: #ffffd0;
     font-size: 80%;
     position: absolute;
-    max-width: 80ex;
+    width: 80ex;
+    min-height: 4ex;
     display: none
 }
