@@ -14,8 +14,7 @@
         a.onmouseleave = (e) => a.style.display = 'none';
     }
     function appear(id) {
-        const p = document.getElementById(id);
-        p.style.display = 'block'
+        document.getElementById(id).style.display = 'block'
     }
     </script>
 </head>
@@ -56,6 +55,9 @@ Viaduct: An Extensible, Optimizing Compiler for Secure Distributed Programs
 Fraser Brown (CMU)
 <tr><td>
 Karim Eldefrawy (SRI)
+<td>
+<span class=talk_title onmouseover="appear('karim_abstract')">
+</span>
 <tr><td>
 Ana Milanova (RPI)
 <td>
@@ -64,19 +66,19 @@ Compilation and Backend-Independent Optimization for MPC
 </span>
 <span class=popup id=milanova_abstract></span>
 <tr><td>
-Andrew Miller (UIUC)
+  Andrew Miller (UIUC)
 <tr><td>
 Nikhil Swamy (Microsoft Research)
 <td>
 <span class=talk_title onmouseover="appear('swamy_abstract')">
-Proof-oriented Programming for Cryptographic Applications
+  Proof-oriented Programming for Cryptographic Applications
 </span>
 <span class=popup id=swamy_abstract></span>
 </table>
+
 <script>
-var popups = document.getElementsByClassName('popup')
-setup_abstract('swamy_abstract', 'abstracts/swamy.html')
-setup_abstract('milanova_abstract', 'abstracts/milanova.html')
+    setup_abstract('swamy_abstract', 'abstracts/swamy.html');
+    setup_abstract('milanova_abstract', 'abstracts/milanova.html');
 </script>
 
 <h2>Schedule</h2>
