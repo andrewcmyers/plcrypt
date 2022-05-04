@@ -259,8 +259,6 @@ span.talk_title { color: #080}
     border: 1px solid black;
     background-color: #ffffd0;
     font-size: 80%;
-    position: relative;
-    left: 3em;
-    bottom: 3ex;
+    position: absolute;
     display: none
 }
