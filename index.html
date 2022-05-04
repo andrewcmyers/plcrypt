@@ -57,10 +57,15 @@ Nikhil Swamy (Microsoft Research)
 Proof-oriented Programming for Cryptographic Applications
 </span>
 <span class=popup id=swamy_abstract></span>
-<script>
-    fetch_content('swamy_abstract', 'abstracts/swamy.html')
-</script>
 </table>
+<script>
+function setup_abstract(id, url) {
+    const a = document.getElementById(id);
+    fetch_content(id, url, () => console.log('fetched ' + id));
+    a.onmouseleave = (e) => a.style.display = 'none';
+}
+setup_abstract('swamy_abstract', 'abstracts/swamy.html')
+</script>
 
 <h2>Schedule</h2>
 
