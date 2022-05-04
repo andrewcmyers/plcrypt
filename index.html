@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>PL/Cryptography Workshop, May 22, 2022</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="ajax.js"></script>
 </head>
 
 <body>
@@ -52,7 +53,13 @@ Andrew Miller (UIUC)
 <tr><td>
 Nikhil Swamy (Microsoft Research)
 <td>
+<span class=talk_title onmouseover="document.getElementById('swamy_abstract').style.display = 'block'">
 Proof-oriented Programming for Cryptographic Applications
+</span>
+<span class=popup id=swamy_abstract></span>
+<script>
+    fetch_content('swamy_abstract', 'abstracts/swamy.html')
+</script>
 </table>
 
 <h2>Schedule</h2>
@@ -69,8 +76,6 @@ guidelines, we have limited capacity, and we will admit attendees
 on a first-come-first-serve basis. 
 There is no registration fee.
 </p>
-
-
 
 </div>
 </body>
