@@ -57,13 +57,16 @@ cryptography can be used as part of secure programming languages.
 <td>
 Josh Acay (Cornell)
 <td>
+<span class=talk_title id=acay_title>
 Viaduct: An Extensible, Optimizing Compiler for Secure Distributed Programs
+</span>
+<span class=popup id=acay_abstract></span>
 <tr><td>
 Fraser Brown (CMU)
 <tr><td>
 Karim Eldefrawy (SRI)
 <td>
-<span class=talk_title onmouseover="appear('karim_abstract')">
+<span class=talk_title id=karim_title>
 </span>
 <tr><td>
 Ana Milanova (RPI)
@@ -84,7 +87,7 @@ Nikhil Swamy (Microsoft Research)
 </table>
 
 <script>
-    const keynotes = ['milanova', 'swamy', 'karim'];
+    const keynotes = ['milanova', 'swamy', 'karim', 'acay'];
     keynotes.forEach(name =>
         setup_abstract(name + '_title', name + '_abstract', 'abstracts/' + name + '.html')
     )

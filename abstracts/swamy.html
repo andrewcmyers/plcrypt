@@ -1,20 +1,25 @@
+<p>
 F* (https://fstar-lang.org) is a general purpose, proof-oriented programming
 language built on a foundation of dependent types.
 
+<p>
 It’s perhaps unique among dependently typed languages in that its design and
 development has been closely tied to applications in cryptography and secure
 systems, notably high-performance implementations of cryptographic primitives
 in HACL*, Vale, and EverCrypt.
 (https://hacl-star.github.io/HaclValeEverCrypt.html)
 
+<p>
 In this talk, I'll focus on Zeta, a new framework to augment a service with a
 concurrent runtime monitor, enabling skeptical clients of the service to detect
 when the service violates a given safety property.
 
+<p>
 Zeta uses a combination of techniques, including cryptography and trusted
 execution environments, to construct a compact, authenticated data structure
 summarizing the state of the service.
 
+<p>
 We built an implementation of Zeta in F*, proving its correctness and security
 using Steel (https://www.fstar-lang.org/papers/steel/), a concurrent separation
 logic embedded in F*. The methodology we developed suggests several general

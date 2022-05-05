@@ -262,5 +262,9 @@ span.talk_title { color: #08c}
     position: absolute;
     width: 80ex;
     min-height: 4ex;
-    display: none
+    display: none;
+    padding: 1ex;
+}
+.popup p {
+    text-indent: 2em
 }
