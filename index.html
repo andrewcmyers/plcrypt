@@ -8,10 +8,16 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="ajax.js"></script>
     <script>
-    function setup_abstract(id, url) {
-        const a = document.getElementById(id);
-        fetch_content(id, url, () => console.log('fetched ' + id));
-        a.onmouseleave = (e) => a.style.display = 'none';
+    function setup_abstract(title, id, url) {
+        const a = document.getElementById(id),
+              t = document.getElementById(title);
+        if (!a || !t) {
+            console.error('missing abstract or title ' + id)
+            return
+        }
+        fetch_content(id, url)
+        t.onmouseenter = (e) => a.style.display = 'block';
+        t.onmouseleave = (e) => a.style.display = 'none';
     }
     function appear(id) {
         document.getElementById(id).style.display = 'block'
@@ -61,7 +67,7 @@ Karim Eldefrawy (SRI)
 <tr><td>
 Ana Milanova (RPI)
 <td>
-<span class=talk_title onmouseover="appear('milanova_abstract')">
+<span class=talk_title id=milanova_title>
 Compilation and Backend-Independent Optimization for MPC
 </span>
 <span class=popup id=milanova_abstract></span>
@@ -70,15 +76,17 @@ Compilation and Backend-Independent Optimization for MPC
 <tr><td>
 Nikhil Swamy (Microsoft Research)
 <td>
-<span class=talk_title onmouseover="appear('swamy_abstract')">
+<span class=talk_title id=swamy_title>
   Proof-oriented Programming for Cryptographic Applications
 </span>
 <span class=popup id=swamy_abstract></span>
 </table>
 
 <script>
-    setup_abstract('milanova_abstract', 'abstracts/milanova.html');
-    setup_abstract('swamy_abstract', 'abstracts/swamy.html');
+    const keynotes = ['milanova', 'swamy', 'karim'];
+    keynotes.forEach(name =>
+        setup_abstract(name + '_title', name + '_abstract', 'abstracts/' + name + '.html')
+    )
 </script>
 
 <h2>Schedule</h2>

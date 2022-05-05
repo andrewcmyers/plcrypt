@@ -13,7 +13,7 @@ function read_from_url(url, cont, err, mimetype) {
         req = new ActiveXObject("Microsoft.XMLHTTP");
     }
     req.onreadystatechange = function() {
-        console.log('readyState ' + url + '=' + req.readyState)
+        // console.log('readyState ' + url + '=' + req.readyState)
         if (req.readyState == 4) {
             if (req.status == 200) {
                 cont(req.responseText)
@@ -26,7 +26,7 @@ function read_from_url(url, cont, err, mimetype) {
         var prefix = location.href;
         url = prefix.replace(/\/[^\/]*$/, '/') + url;
     }
-    console.log("Fetching " + url);
+    // console.log("Fetching " + url);
     req.open("GET", url, true);
     req.send(null);
 }
