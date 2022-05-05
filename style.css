@@ -154,7 +154,11 @@ input#download:hover {
 p {
     max-width: 100ex;
     text-align: left;
+    text-indent: 2em;
     margin: 0 auto;
+}
+p:first-child {
+    text-indent: 0;
 }
 
 

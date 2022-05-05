@@ -7,22 +7,7 @@
     <title>PL/Cryptography Workshop, May 22, 2022</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="ajax.js"></script>
-    <script>
-    function setup_abstract(title, id, url) {
-        const a = document.getElementById(id),
-              t = document.getElementById(title);
-        if (!a || !t) {
-            console.error('missing abstract or title ' + id)
-            return
-        }
-        fetch_content(id, url)
-        t.onmouseenter = (e) => a.style.display = 'block';
-        t.onmouseleave = (e) => a.style.display = 'none';
-    }
-    function appear(id) {
-        document.getElementById(id).style.display = 'block'
-    }
-    </script>
+    <script src="abstracts.js"></script>
 </head>
 
 <body>
@@ -44,8 +29,7 @@ cryptography can be used as part of secure programming languages.
 <br>
 <p>
 <b> Date: Sunday, May 22, 2022</b> (before the Oakland conference)<br>
-<b> Location: SRI International, Menlo Park, California </b> 
-(<a href="docs/SRI-Covid-Visitor Questionnaire_final.pdf">SRI Visitor COVID-19 Questionnaire</a>)
+<b> Location: SRI International, Menlo Park, California (see information below)</b> 
 </p>
 
 <h2> Keynote speakers:</h2> 
@@ -86,18 +70,14 @@ Nikhil Swamy (Microsoft Research)
 <span class=popup id=swamy_abstract></span>
 </table>
 
-<script>
-    const keynotes = ['milanova', 'swamy', 'karim', 'acay'];
-    keynotes.forEach(name =>
-        setup_abstract(name + '_title', name + '_abstract', 'abstracts/' + name + '.html')
-    )
-</script>
-
 <h2>Schedule</h2>
 
+<div>
 <p>In progress</p>
 
+</div>
 <h2>Registration</h2>
+<div>
 
 <p>
 To attend, please RSVP using this <a href="https://forms.gle/qSvPH17NFEC5KHWX8
@@ -107,9 +87,30 @@ guidelines, we have limited capacity, and we will admit attendees
 on a first-come-first-serve basis. 
 There is no registration fee.
 </p>
-<p>
-<h2>Venue</h2>
 
 </div>
+<h2>Venue</h2>
+
+<div>
+<p> The workshop will be held at
+SRI International in Menlo Park, California.
+</p>
+<p>
+Please review the COVID policy (<a href="docs/SRI-Covid-Visitor
+Questionnaire_final.pdf">SRI Visitor COVID-19 Questionnaire</a>) and be
+prepared.  The current SRI policy is no masks ATM. This might change next week.
+It also never hurts to make sure you have a copy of your COVID vaccination
+card. Some places in the area (not SRI) require vaccination cards.
+</p>
+</div>
+
+</div>
+<script>
+    const keynotes = ['milanova', 'swamy', 'karim', 'acay'];
+    keynotes.forEach(name =>
+        setup_abstract(name + '_title', name + '_abstract', 'abstracts/' + name + '.html')
+    )
+</script>
+
 </body>
 </html>
