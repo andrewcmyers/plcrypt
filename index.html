@@ -2,12 +2,13 @@
 <html lang="en-US">     
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>PL/Cryptography Workshop, May 22, 2022</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="ajax.js"></script>
-    <script src="abstracts.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PL/Cryptography Workshop, May 22, 2022</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="ajax.js"></script>
+  <script src="ezdom.js"></script>
+  <script src="abstracts.js"></script>
 </head>
 
 <body>
@@ -35,42 +36,39 @@ cryptography can be used as part of secure programming languages.
 <h2> Keynote speakers:</h2> 
 
 <table>
-<tr>
-<th>Speaker<th>Talk title
-<tr>
-<td>
+<tr><th>Speaker</th><th>Talk title</th></tr>
+
+<tr><td>
 Josh Acay (Cornell)
 <td>
 <span class=talk_title id=acay_title>
-Viaduct: An Extensible, Optimizing Compiler for Secure Distributed Programs
+  Viaduct: An Extensible, Optimizing Compiler for Secure Distributed Programs
 </span>
-<span class=popup id=acay_abstract></span>
+
 <tr><td>
 Fraser Brown (CMU)
+
 <tr><td>
 Karim Eldefrawy (SRI)
 <td>
 <span class=talk_title id=karim_title>
 </span>
+
 <tr><td>
 Ana Milanova (RPI)
 <td>
-<span class=talk_title id=milanova_title>
-Compilation and Backend-Independent Optimization for MPC
-</span>
-<span class=popup id=milanova_abstract></span>
+<span class=talk_title id=milanova_title>Compilation and Backend-Independent Optimization for MPC</span>
+
 <tr><td>
   Andrew Miller (UIUC)
-<td><span class=talk_title id=miller_title>
-Ideal Functionalities for Smart Contract Programmers
-</span>
+<td>
+<span class=talk_title id=miller_title>Ideal Functionalities for Smart Contract Programmers</span>
+
 <tr><td>
 Nikhil Swamy (Microsoft Research)
 <td>
-<span class=talk_title id=swamy_title>
-  Proof-oriented Programming for Cryptographic Applications
-</span>
-<span class=popup id=swamy_abstract></span>
+<span class=talk_title id=swamy_title>Proof-oriented Programming for Cryptographic Applications</span>
+
 </table>
 
 <h2>Schedule</h2>
@@ -109,10 +107,8 @@ card. Some places in the area (not SRI) require vaccination cards.
 
 </div>
 <script>
-    const keynotes = ['milanova', 'swamy', 'karim', 'acay'];
-    keynotes.forEach(name =>
-        setup_abstract(name + '_title', name + '_abstract', 'abstracts/' + name + '.html')
-    )
+    const keynotes = ['milanova', 'swamy', 'karim', 'acay']
+    keynotes.forEach(setup_abstract)
 </script>
 
 </body>

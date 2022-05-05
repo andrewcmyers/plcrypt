@@ -1,11 +1,13 @@
-function setup_abstract(title, id, url) {
-    const a = document.getElementById(id),
-            t = document.getElementById(title);
+function setup_abstract(name) {
+    const title = name + "_title"
+    const t = document.getElementById(title);
+    const a = EZDom.span({className: 'popup', id: name + "_abstract"})
+    t.parentNode.insertBefore(a, t.nextSibling)
     if (!a || !t) {
         console.error('missing abstract or title ' + id)
         return
     }
-    fetch_content(id, url)
+    fetch_content(a.id, 'abstracts/' + name + '.html')
     t.onmouseenter = (e) => a.style.display = 'block';
     t.onmouseleave = (e) => a.style.display = 'none';
 }
