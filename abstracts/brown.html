@@ -1,0 +1,14 @@
+This talk presents CirC ("SIR-see"), a compiler infrastructure that aims to
+support zero-knowledge proof systems, multi-party computations, fully
+homomorphic encryption, constraint solving, and optimization. We observe that
+these seemingly disparate cryptosystems and verification problems share a
+common model of computation. This model is characterized by being state-free,
+non-uniform, and non-deterministic—we call it the existentially quantified
+circuit (EQC) model. This model admits a shared compiler infrastructure (CirC)
+for compiling different high-level languages to different circuit
+representations used by these systems. Finally, we find that leveraging
+shared infrastructure makes it easy (e.g., 28k LOC vs 700 LOC) to build
+well-performing compilers; it’s also possible to easily build “cross-over”
+applications in which different back-end systems are combined in service of
+a shared goal (e.g., for zero knowledge bug bounties or SMT-assisted
+optimization). 
